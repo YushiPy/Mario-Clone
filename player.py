@@ -21,7 +21,7 @@ class Player(Entity):
         
         if not override_condition and not any(map(self.map.__contains__, self.vertical_blocks())): return
 
-        self.speed.y += PLAYER_JUMP_FORCE
+        self.speed.y = PLAYER_JUMP_FORCE
     
     
     @override
