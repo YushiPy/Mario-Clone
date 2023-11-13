@@ -1,0 +1,14 @@
+
+from PythonModules.colors import blue_sky
+
+BG_COLOR = blue_sky
+
+IMAGE_EXTENSION = '.png'
+
+SPRITES_FOLDER_NAME = 'Sprites'
+LEVELS_FOLDER_NAME = 'Levels'
+
+BLOCKS_FOLDER_NAME = 'Blocks'
+MARIO_FOLDER_NAME = 'Mario'
+
+SPRITES_FOLDER_LIST = [BLOCKS_FOLDER_NAME, MARIO_FOLDER_NAME]
