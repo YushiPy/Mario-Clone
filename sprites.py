@@ -6,7 +6,7 @@ import pygame as pg
 from Settings.block import BLOCK_SIZE
 from Settings.sprite import SPRITES_FOLDER_NAME, SPRITES_FOLDER_LIST, IMAGE_EXTENSION
 
-FOLDER_PATH = f'{__file__.rsplit('/', 1)[0]}/{SPRITES_FOLDER_NAME}'
+FOLDER_PATH = os.path.join(os.path.dirname(__file__), SPRITES_FOLDER_NAME)
 
 def load(name: str, size: tuple[float, float] | None = None, sprite_type: int | str | None = None) -> pg.Surface:
     """size's units should be in game blocks"""
