@@ -4,6 +4,7 @@ from importlib.util import spec_from_file_location, module_from_spec
 from os.path import join
 
 import sys
+import os
 
 from block import Block
 from map import Map
@@ -11,9 +12,7 @@ from player import Player
 
 from Settings.sprite import LEVELS_FOLDER_NAME
 
-
-FOLDER_PATH = join(__file__.rsplit('/', 1)[0], LEVELS_FOLDER_NAME)
-
+FOLDER_PATH = os.path.join(os.path.dirname(__file__), LEVELS_FOLDER_NAME)
 
 def import_module(name: str, path: str) -> ModuleType:
     
